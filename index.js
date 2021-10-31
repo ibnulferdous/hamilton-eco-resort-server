@@ -42,7 +42,6 @@ async function run() {
       const villa = req.body;
       const result = await villasCollection.insertOne(villa);
 
-      console.log(`A document was inserted with the _id: ${result.insertedId}`);
       res.json(result);
     });
 
@@ -59,7 +58,6 @@ async function run() {
 
       const result = await bookingCollection.insertOne(booking);
 
-      console.log(`A document was inserted with the _id: ${result.insertedId}`);
       res.json(result);
     });
 
